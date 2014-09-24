@@ -1,9 +1,13 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNet.Identity
+@using CSC440_Project.Models
+@using Microsoft.AspNet.Identity.EntityFramework
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>Cincinnati Job Outlook Portal</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -17,13 +21,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Cincinnati Job Outlook Portal", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    @*<li>@Html.ActionLink("Contact", "Contact", "Home")</li>*@
+                    @{
+                        var currentUserId = User.Identity.GetUserId();
+                        var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new CSC440_Project.Modules.AppDbContext()));
+                        var currentUser = manager.FindById(currentUserId);
+
+                        if (currentUser != null)
+                        {
+                            if (currentUser.IsAdmin)
+                            {
+                                <li>@Html.ActionLink("Administration", "Index", "Admin")</li>
+                            }
+                        }
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -33,7 +49,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Cincinnati Job Outlook Portal</p>
         </footer>
     </div>
 

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<CSC440_Project.Models.OccupationalGroup>
+
+<table class="table table-responsive table-striped table-hover">
+    <thead>
+        <tr>
+            <th>
+                Occupational Group Name
+            </th>
+            <th>
+                Current Employment (2010)
+            </th>
+            <th>
+                Estimated Future Employment (2020)
+            </th>
+            <th>
+                Estimated Change
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var group in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(group.GroupName, "Details", "OccupationalGroup", new { id = group.Id }, null)
+                </td>
+                <td>
+                    @group.CurrentEmploymentNumber
+                </td>
+                <td>
+                    @group.FutureEmploymentNumber
+                </td>
+                <td>
+                    @(Math.Round(group.PercentChange * 100, 1))%
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using CSC440_Portal.Models;
+using CSC440_Project.Models;
 
 namespace CSC440_Portal.Controllers
 {

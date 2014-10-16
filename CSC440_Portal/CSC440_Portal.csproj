@@ -262,6 +262,7 @@
     <Content Include="Views\OccupationalGroup\Index.cshtml" />
     <Content Include="Views\OccupationalGroup\Edit.cshtml" />
     <Content Include="Views\DetailedOccupation\Index.cshtml" />
+    <Content Include="Views\DetailedOccupation\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

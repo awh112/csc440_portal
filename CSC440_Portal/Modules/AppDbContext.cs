@@ -61,5 +61,41 @@ namespace CSC440_Project.Modules
 
             return dbEntry;
         }
+
+        public void SaveDetailedOccupation(DetailedOccupation occupation)
+        {
+            if (occupation.Id == 0)
+            {
+                //create one to use below
+            }
+
+            var dbOccupation = DetailedOccupations.Find(occupation.Id);
+
+            if (dbOccupation != null)
+            {
+                dbOccupation.OccupationalCode = occupation.OccupationalCode;
+                dbOccupation.Title = occupation.Title;
+                dbOccupation.CurrentEmployment = occupation.CurrentEmployment;
+                dbOccupation.FutureEmployment = occupation.FutureEmployment;
+                dbOccupation.NumberChange = occupation.NumberChange;
+                dbOccupation.PercentageChange = occupation.PercentageChange;
+                dbOccupation.OpeningsAndReplacementsGrowth = occupation.OpeningsAndReplacementsGrowth;
+            }
+
+            SaveChanges();
+        }
+
+        public DetailedOccupation DeleteDetailedOccupation(int id)
+        {
+            var dbEntry = DetailedOccupations.Find(id);
+
+            if(dbEntry != null)
+            {
+                DetailedOccupations.Remove(dbEntry);
+                SaveChanges();
+            }
+
+            return dbEntry;
+        }
     }
 }

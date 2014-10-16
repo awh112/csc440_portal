@@ -5,4 +5,13 @@
 
 <h2>Administration</h2>
 <h3>Data Management</h3>
-@Html.ActionLink("Upload data", "Upload", "Admin")
+<ul>
+    <li>@Html.ActionLink("Sync Open Data Cinty data", "UploadCincy", "Admin")</li>
+    <li>@Html.ActionLink("Sync Bureau of Labor Statistics data", "UploadBLS", "Admin")</li>
+    <li>Edit Occupational Groups</li>
+    <li>Edit Detailed Occupations</li>
+</ul>
+<h3>User Management</h3>
+<ul>
+    <li>Manage User Information</li>
+</ul>

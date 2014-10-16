@@ -4,16 +4,20 @@
     <thead>
         <tr>
             <th>
-                Occupational Group Name
+                @*Occupational Group Name*@
+                @Html.ActionLink("Occupational Group Name", "Index", "Home", new { sortType = "GroupName" }, null)
             </th>
             <th>
-                Current Employment (2010)
+                @*Current Employment (2010)*@
+                @Html.ActionLink("Current Employment (2010)", "Index", "Home", new { sortType = "Current" }, null)
             </th>
             <th>
-                Estimated Future Employment (2020)
+                @*Estimated Future Employment (2020)*@
+                @Html.ActionLink("Estimated Future Employment (2020)", "Index", "Home", new { sortType = "Future" }, null)
             </th>
             <th>
-                Estimated Change
+                @*Estimated Change*@
+                @Html.ActionLink("Estimated Change", "Index", "Home", new { sortType = "Change" }, null)
             </th>
         </tr>
     </thead>
@@ -25,10 +29,10 @@
                     @Html.ActionLink(group.GroupName, "Details", "OccupationalGroup", new { id = group.Id }, null)
                 </td>
                 <td>
-                    @group.CurrentEmploymentNumber
+                    @(String.Format("{0:n0}", group.CurrentEmploymentNumber))
                 </td>
                 <td>
-                    @group.FutureEmploymentNumber
+                    @(String.Format("{0:n0}", group.FutureEmploymentNumber))
                 </td>
                 <td>
                     @(Math.Round(group.PercentChange * 100, 1))%

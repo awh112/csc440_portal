@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Upload";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sync data</h2>
+
+<p>
+    If you'd like to update the data in the database with the most recent from Open Data Cincy,
+    click the "Sync" button below.
+    <br /> <br />
+    NOTE: This will remove the existing data from the database and overwrite it with the current
+    data.  Please make sure you are ok with this before proceeding.
+</p>
+@using (Html.BeginForm("SyncCincyData", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <input type="submit" value="Sync" />
+}

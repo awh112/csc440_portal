@@ -1,12 +1,9 @@
 ﻿using CSC440_Project.Attributes;
-using CSC440_Project.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
 using CSC440_Project.Modules;
+using Ionic.Zip;
 using System.IO;
+using System.Net;
+using System.Web.Mvc;
 
 namespace CSC440_Project.Controllers
 {
@@ -19,28 +16,52 @@ namespace CSC440_Project.Controllers
             return View();
         }
 
-        public ActionResult Upload()
+        public ActionResult UploadCincy()
+        {
+            return View();
+        }
+
+        public ActionResult UploadBLS()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult UploadFile(string filepath)
+        public ActionResult SyncCincyData()
         {
-            //we want to check here that the first file in the request is not null
-            if (Request.Files[0] != null)
+            //this won't change for the purposes of this assignment
+            string cincyURL = "http://d2fy1sc0f5svw4.cloudfront.net/Preset%20Tables%20Cincinnati%20MSA.zip";
+
+            byte[] zipInfo = null;
+
+            using(var wc = new WebClient())
             {
-                var file = Request.Files[0];
+                zipInfo = wc.DownloadData(cincyURL);
+            }
 
-                //byte[] data = new byte[file.ContentLength];
+            if(zipInfo != null)
+            {
+                //get the stream from the byte info
+                Stream zipStream = new MemoryStream(zipInfo);
 
-                //Stream stream = new MemoryStream(data);
+                using(ZipFile zip = ZipFile.Read(zipStream))
+                {
+                    MemoryStream outputStream = new MemoryStream();
 
-                ExcelParser.ProcessFile(file.InputStream);
+                    ZipEntry entry = zip[0];
+                    entry.Extract(outputStream);
+
+                    ExcelParser.ProcessFile(outputStream);
+                }
             }
 
             ViewBag.Message = "Success!";
 
+            return View("Index");
+        }
+
+        public ActionResult SyncBLSData()
+        {
             return View("Index");
         }
     }

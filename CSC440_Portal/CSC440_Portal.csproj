@@ -172,6 +172,7 @@
     <Compile Include="Attributes\UserAuthorize.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\DetailedOccupationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OccupationalGroupController.cs" />
@@ -258,6 +259,9 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\UploadCincy.cshtml" />
     <Content Include="Views\Admin\UploadBLS.cshtml" />
+    <Content Include="Views\OccupationalGroup\Index.cshtml" />
+    <Content Include="Views\OccupationalGroup\Edit.cshtml" />
+    <Content Include="Views\DetailedOccupation\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

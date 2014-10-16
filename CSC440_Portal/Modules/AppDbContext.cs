@@ -23,5 +23,43 @@ namespace CSC440_Project.Modules
         {
             return new AppDbContext();
         }
+
+        public void SaveOccupationalGroup(OccupationalGroup group)
+        {
+            if (group.Id == 0)
+            {
+                //create one to use below
+            }
+
+            var dbGroup = OccupationalGroups.Find(group.Id);
+
+            if (dbGroup != null)
+            {
+                dbGroup.OccupationalCode = group.OccupationalCode;
+                dbGroup.GroupName = group.GroupName;
+                dbGroup.CurrentEmploymentNumber = group.CurrentEmploymentNumber;
+                dbGroup.FutureEmploymentNumber = group.FutureEmploymentNumber;
+                dbGroup.PercentChange = group.PercentChange;
+                dbGroup.NumberChange = group.NumberChange;
+                dbGroup.Replacements = group.Replacements;
+                dbGroup.Openings = group.Openings;
+                dbGroup.MedianAnnualWage = group.MedianAnnualWage;
+            }
+
+            SaveChanges();
+        }
+
+        public OccupationalGroup DeleteOccupationalGroup(int id)
+        {
+            var dbEntry = OccupationalGroups.Find(id);
+
+            if (dbEntry != null)
+            {
+                OccupationalGroups.Remove(dbEntry);
+                SaveChanges();
+            }
+
+            return dbEntry;
+        }
     }
 }

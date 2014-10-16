@@ -3,12 +3,19 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success" role="alert">
+        <a href="#" class="alert-link">@ViewBag.Message</a>
+    </div>
+}
+
 <h2>Administration</h2>
 <h3>Data Management</h3>
 <ul>
     <li>@Html.ActionLink("Sync Open Data Cinty data", "UploadCincy", "Admin")</li>
     <li>@Html.ActionLink("Sync Bureau of Labor Statistics data", "UploadBLS", "Admin")</li>
-    <li>Edit Occupational Groups</li>
+    <li>@Html.ActionLink("Edit Occupational Groups", "Index", "OccupationalGroup")</li>
     <li>Edit Detailed Occupations</li>
 </ul>
 <h3>User Management</h3>

@@ -60,6 +60,7 @@ namespace CSC440_Project.Controllers
             return View("Index");
         }
 
+        [HttpPost]
         public ActionResult SyncBLSData()
         {
             return View("Index");

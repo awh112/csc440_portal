@@ -97,5 +97,35 @@ namespace CSC440_Project.Modules
 
             return dbEntry;
         }
+
+        public void SaveUser(ApplicationUser user)
+        {
+            if(user.Id != "")
+            {
+
+            }
+
+            var dbUser = Users.Find(user.Id);
+
+            if(dbUser != null)
+            {
+                dbUser.UserName = user.UserName;
+                dbUser.Email = user.Email;
+                dbUser.IsAdmin = user.IsAdmin;
+            }
+        }
+
+        public ApplicationUser DeleteUser(string id)
+        {
+            var dbEntry = Users.Find(id);
+
+            if (dbEntry != null)
+            {
+                Users.Remove(dbEntry);
+                SaveChanges();
+            }
+
+            return dbEntry;
+        }
     }
 }

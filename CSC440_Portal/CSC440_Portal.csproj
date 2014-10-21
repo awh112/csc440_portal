@@ -264,10 +264,10 @@
     <Content Include="Views\OccupationalGroup\Edit.cshtml" />
     <Content Include="Views\DetailedOccupation\Index.cshtml" />
     <Content Include="Views\DetailedOccupation\Edit.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

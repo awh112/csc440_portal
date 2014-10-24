@@ -19,8 +19,10 @@
     </thead>
     <tbody>
         @foreach (var group in Model)
-        {
-            <tr>
+        {            
+            string growth = (group.FutureEmploymentNumber > group.CurrentEmploymentNumber) ? "color:green;" : "color:red;";
+            
+            <tr style="@growth">
                 <td>
                     @Html.ActionLink(group.GroupName, "Details", "OccupationalGroup", new { id = group.Id }, null)
                 </td>

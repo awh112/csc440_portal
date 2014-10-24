@@ -3,16 +3,26 @@
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    
+
     var context = new CSC440_Project.Modules.AppDbContext();
     var DOs = context.DetailedOccupations.Where(o => o.OccupationalGroupId == Model.Id).ToList();
 }
 
 <h2>@Model.GroupName</h2>
 <h3>
-    Below is a table of the Detailed Occupations associated with the above group.  You can also 
+    Below is a table of the Detailed Occupations associated with the above group.  You can also
     see a graphical representation of the current and estimated employment below.
 </h3>
+<br />
+
+@if (Model.FutureEmploymentNumber > Model.CurrentEmploymentNumber)
+{
+    <h3 style="color:green;">This group is expected to grow by 2020.</h3>
+}
+else
+{
+    <h3 style="color:red;">This group is expected to decline by 2020.</h3>
+}
 <br />
 
 <div id="container"></div>
@@ -24,6 +34,6 @@
 @Html.Partial("DetailedOccupations", DOs)
 
 @*<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-<script>
+    <script>
 
-</script>*@
+    </script>*@

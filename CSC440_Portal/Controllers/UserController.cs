@@ -43,7 +43,7 @@ namespace CSC440_Portal.Controllers
         {
             if (ModelState.IsValid)
             {
-                //_context.SaveDetailedOccupation(occupation);
+                _context.SaveUser(user);
             }
 
             return View(user);

@@ -109,10 +109,10 @@ namespace CSC440_Project.Modules
 
             if(dbUser != null)
             {
-                dbUser.UserName = user.UserName;
-                dbUser.Email = user.Email;
                 dbUser.IsAdmin = user.IsAdmin;
             }
+
+            SaveChanges();
         }
 
         public ApplicationUser DeleteUser(string id)

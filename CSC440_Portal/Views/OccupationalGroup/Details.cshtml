@@ -3,6 +3,27 @@
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    
+    var context = new CSC440_Project.Modules.AppDbContext();
+    var DOs = context.DetailedOccupations.Where(o => o.OccupationalGroupId == Model.Id).ToList();
 }
 
 <h2>@Model.GroupName</h2>
+<h3>
+    Below is a table of the Detailed Occupations associated with the above group.  You can also 
+    see a graphical representation of the current and estimated employment below.
+</h3>
+<br />
+
+<div id="container"></div>
+
+@*hidden fields for the occupational group data we are using for d3*@
+<input type="hidden" name="CurrentEmployment" value="@Model.CurrentEmploymentNumber" />
+<input type="hidden" name="FutureEmployment" value="@Model.FutureEmploymentNumber" />
+
+@Html.Partial("DetailedOccupations", DOs)
+
+@*<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script>
+
+</script>*@

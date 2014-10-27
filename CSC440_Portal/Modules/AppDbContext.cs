@@ -127,5 +127,20 @@ namespace CSC440_Project.Modules
 
             return dbEntry;
         }
+
+        public bool ClearDataTables()
+        {
+            Database.ExecuteSqlCommand("DELETE FROM OccupationalGroups");
+            Database.ExecuteSqlCommand("DELETE FROM DetailedOccupations");
+            SaveChanges();
+
+            if(DetailedOccupations.Count() == 0 && OccupationalGroups.Count() == 0)
+            {
+                //return true to signal success
+                return true;
+            }
+
+            return false;
+        }
     }
 }

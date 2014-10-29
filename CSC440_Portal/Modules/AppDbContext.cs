@@ -109,10 +109,10 @@ namespace CSC440_Project.Modules
 
             if(dbUser != null)
             {
-                dbUser.UserName = user.UserName;
-                dbUser.Email = user.Email;
                 dbUser.IsAdmin = user.IsAdmin;
             }
+
+            SaveChanges();
         }
 
         public ApplicationUser DeleteUser(string id)
@@ -126,6 +126,21 @@ namespace CSC440_Project.Modules
             }
 
             return dbEntry;
+        }
+
+        public bool ClearDataTables()
+        {
+            Database.ExecuteSqlCommand("DELETE FROM OccupationalGroups");
+            Database.ExecuteSqlCommand("DELETE FROM DetailedOccupations");
+            SaveChanges();
+
+            if(DetailedOccupations.Count() == 0 && OccupationalGroups.Count() == 0)
+            {
+                //return true to signal success
+                return true;
+            }
+
+            return false;
         }
     }
 }

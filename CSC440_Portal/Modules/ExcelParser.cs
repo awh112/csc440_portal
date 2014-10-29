@@ -17,7 +17,14 @@ namespace CSC440_Project.Modules
 
             DataSet result = excelReader.AsDataSet();
 
-            ParseDataSet(result);
+            //before we sync the new data, we want to clear the old data
+            var context = new AppDbContext();
+            var success = context.ClearDataTables();
+
+            if (success)
+            {
+                ParseDataSet(result);
+            }
 
             excelReader.Close();
         }

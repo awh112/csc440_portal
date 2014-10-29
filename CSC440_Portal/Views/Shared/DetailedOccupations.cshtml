@@ -1,0 +1,51 @@
+﻿@model IEnumerable<CSC440_Project.Models.DetailedOccupation>
+
+<table class="table table-responsive table-striped table-hover">
+    <thead>
+        <tr>
+            <th>
+                Detailed Occupation Name
+                @*@Html.ActionLink("Detailed Occupation Name", "Details", "OccupationalGroup", new { sortType = "GroupName" }, null)*@
+            </th>
+            <th>
+                Current Employment (2010)
+                @*@Html.ActionLink("Current Employment (2010)", "Details", "OccupationalGroup", new { sortType = "Current" }, null)*@
+            </th>
+            <th>
+                Estimated Future Employment (2020)
+                @*@Html.ActionLink("Estimated Future Employment (2020)", "Details", "OccupationalGroup", new { sortType = "Future" }, null)*@
+            </th>
+            <th>
+                Estimated Change
+                @*@Html.ActionLink("Estimated Change", "Details", "OccupationalGroup", new { sortType = "Change" }, null)*@
+            </th>
+            <th>
+                Openings and Replacements
+                @*@Html.ActionLink("Openings and Replacements", "Details", "OccupationalGroup", new { sortType = "Change" }, null)*@
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var group in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(group.Title, "Details", "DetailedOccupation", new { id = group.Id }, null)
+                </td>
+                <td>
+                    @(String.Format("{0:n0}", group.CurrentEmployment))
+                </td>
+                <td>
+                    @(String.Format("{0:n0}", group.FutureEmployment))
+                </td>
+                <td>
+                    @(Math.Round(group.PercentageChange * 100, 1))%
+                </td>
+                <td>
+                    @(String.Format("{0:n0}", group.OpeningsAndReplacementsGrowth))
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

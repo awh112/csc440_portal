@@ -1,0 +1,42 @@
+﻿@model IEnumerable<CSC440_Project.Models.OccupationalGroup>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit Occupational Groups</h2>
+
+<table class="table table-responsive table-striped table-hover">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Occupational Code
+        </th>
+        <th>
+            Group Name
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OccupationalCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroupName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>

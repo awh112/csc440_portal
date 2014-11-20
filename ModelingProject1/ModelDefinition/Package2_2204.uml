@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="76867b4f-6595-4d08-bb5f-cff665f6b8a2"
+  name="System"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="c23704ae-396a-49e4-9fc8-bb49223a0f66"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1b5ecbf5-38e3-45ef-baef-173f0f43287d"
+        LastKnownName="Threading"
+        LastKnownLocation="Package3_2204.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="794c005d-1767-49e4-b255-fc6d15999f87"
+        LastKnownName="Security"
+        LastKnownLocation="Package5_2204.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9b77b4cb-f88f-457b-961d-130e6813a9a1"
+        name="Double"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="82634390-d6d7-4d4e-bc0d-86113d2583af"
+            handle="viewcode://./CodeSchema_Struct?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DDouble"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2eaacd02-3c05-44ed-bb6b-22af8a320e1c"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e8b3552f-9f64-450c-93a3-935947d20ab3">
+                <propertyInstance
+                  Id="d8b3b097-43a0-45bf-b708-896fd02674f4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b3d48a5e-032a-473b-913c-c2512eb36d91">
+                <propertyInstance
+                  Id="c8958437-30e3-448f-96e0-7db25fb5bfc4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5392c11f-1161-4f3e-8833-74ea3c3a77cd">
+                <propertyInstance
+                  Id="d344b884-a883-4cc7-8f6e-094b2b952063"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="226b59f0-5189-440a-8a6a-317a82c5a6fd">
+                <propertyInstance
+                  Id="e187d6a6-2a42-4d57-9a12-31537b63025a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="570f8f23-b37e-4b2a-8585-c75ca88a5388"
+        LastKnownName="Data"
+        LastKnownLocation="Package1_2205.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2520be1c-9636-468e-b44c-f6bd93fcccef"
+        LastKnownName="IO"
+        LastKnownLocation="Package3_2205.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

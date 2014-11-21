@@ -17,5 +17,10 @@ namespace CSC440_Project.Models
         public virtual int Replacements { get; set; }
         public virtual int Openings { get; set; }
         public virtual int MedianAnnualWage { get; set; }
+        public virtual double? BLSCurrent { get; set; }
+        public virtual double? BLSFuture { get; set; }
+        public virtual double? BLSNumChange { get; set; }
+        public virtual double? BLSPercentChange { get; set; }
+        public virtual double? BLSMedianWage { get; set; }
     }
 }

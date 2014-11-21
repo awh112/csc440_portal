@@ -29,6 +29,40 @@ namespace CSC440_Project.Modules
             excelReader.Close();
         }
 
+        public static void ProcessBLSFile(Stream stream)
+        {
+            IExcelDataReader excelReader = ExcelReaderFactory.CreateBinaryReader(stream);
+
+            DataSet result = excelReader.AsDataSet();
+
+            //we don't clear the data with this because it is an existing model
+
+            var worksheet = result.Tables[1];
+
+            ParseBLSData(worksheet);
+
+            excelReader.Close();
+        }
+
+        private static void ParseBLSData(DataTable table)
+        {
+            var context = new AppDbContext();
+
+            for(int i = 4; i < table.Rows.Count; i++)
+            {
+                var row = table.Rows[i];
+
+                if(row[0].ToString() == "")
+                {
+                    break;
+                }
+
+                //we should already have the corresponding Occupational Groups to update
+                //TODO: find the group name here, convert & to and for BLS data and take off the 'occupation' part of the title
+                //var existing = context.OccupationalGroups.FirstOrDefault(g => )
+            }
+        }
+
         private static void ParseDataSet(DataSet result)
         {
             //each data set should have x tables, we need to get each one of these, but only certain ones for now
@@ -132,24 +166,6 @@ namespace CSC440_Project.Modules
                     //TODO: send the user to an error page with the correct error details
                 }
             }
-        }
-
-        public static void ProcessBLSFile(Stream stream)
-        {
-            IExcelDataReader excelReader = ExcelReaderFactory.CreateOpenXmlReader(stream);
-
-            DataSet result = excelReader.AsDataSet();
-
-            //before we sync the new data, we want to clear the old data
-            var context = new AppDbContext();
-            var success = context.ClearBDCData();
-
-            if (success)
-            {
-                ParseDataSet(result);
-            }
-
-            excelReader.Close();
         }
     }
 }

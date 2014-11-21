@@ -196,9 +196,12 @@
     <Compile Include="Migrations\201411210135505_AddBLSData.Designer.cs">
       <DependentUpon>201411210135505_AddBLSData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201411210226241_addNullableBLS.cs" />
+    <Compile Include="Migrations\201411210226241_addNullableBLS.Designer.cs">
+      <DependentUpon>201411210226241_addNullableBLS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\BLSOccuupationalGroup.cs" />
     <Compile Include="Models\DetailedOccupation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -306,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201411210135505_AddBLSData.resx">
       <DependentUpon>201411210135505_AddBLSData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411210226241_addNullableBLS.resx">
+      <DependentUpon>201411210226241_addNullableBLS.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

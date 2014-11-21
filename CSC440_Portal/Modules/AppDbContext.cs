@@ -143,13 +143,5 @@ namespace CSC440_Project.Modules
 
             return false;
         }
-
-        public bool ClearBDCData()
-        {
-            Database.ExecuteSqlCommand("DELETE FROM BLSOccupationalGroups");
-            SaveChanges();
-
-            return true;
-        }
     }
 }

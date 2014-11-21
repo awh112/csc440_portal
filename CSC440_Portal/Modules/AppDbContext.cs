@@ -12,6 +12,7 @@ namespace CSC440_Project.Modules
     {
         public DbSet<OccupationalGroup> OccupationalGroups { get; set; }
         public DbSet<DetailedOccupation> DetailedOccupations { get; set; }
+        //public DbSet<BLSOccupationalGroup> BLSOccupationalGroups { get; set; }
 
         public AppDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
@@ -141,6 +142,14 @@ namespace CSC440_Project.Modules
             }
 
             return false;
+        }
+
+        public bool ClearBDCData()
+        {
+            Database.ExecuteSqlCommand("DELETE FROM BLSOccupationalGroups");
+            SaveChanges();
+
+            return true;
         }
     }
 }

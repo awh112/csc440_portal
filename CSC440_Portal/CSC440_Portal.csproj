@@ -184,8 +184,21 @@
     <Compile Include="Migrations\201409241909404_CreateTables.Designer.cs">
       <DependentUpon>201409241909404_CreateTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201411210125456_AddBLSModel.cs" />
+    <Compile Include="Migrations\201411210125456_AddBLSModel.Designer.cs">
+      <DependentUpon>201411210125456_AddBLSModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411210133590_AddBLSGroup.cs" />
+    <Compile Include="Migrations\201411210133590_AddBLSGroup.Designer.cs">
+      <DependentUpon>201411210133590_AddBLSGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411210135505_AddBLSData.cs" />
+    <Compile Include="Migrations\201411210135505_AddBLSData.Designer.cs">
+      <DependentUpon>201411210135505_AddBLSData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BLSOccuupationalGroup.cs" />
     <Compile Include="Models\DetailedOccupation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -284,6 +297,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201409241909404_CreateTables.resx">
       <DependentUpon>201409241909404_CreateTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411210125456_AddBLSModel.resx">
+      <DependentUpon>201411210125456_AddBLSModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411210133590_AddBLSGroup.resx">
+      <DependentUpon>201411210133590_AddBLSGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411210135505_AddBLSData.resx">
+      <DependentUpon>201411210135505_AddBLSData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

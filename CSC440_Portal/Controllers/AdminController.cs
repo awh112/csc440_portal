@@ -51,7 +51,7 @@ namespace CSC440_Project.Controllers
                     ZipEntry entry = zip[0];
                     entry.Extract(outputStream);
 
-                    ExcelParser.ProcessFile(outputStream);
+                    ExcelParser.ProcessODCFile(outputStream);
                 }
             }
 
@@ -63,6 +63,21 @@ namespace CSC440_Project.Controllers
         [HttpPost]
         public ActionResult SyncBLSData()
         {
+            //this won't change for the purpose of this assignment
+            string blsURL = "http://www.bls.gov/emp/ind-occ-matrix/occupation.xls";
+
+            byte[] excelInfo = null;
+
+            using(var wc = new WebClient())
+            {
+                excelInfo = wc.DownloadData(blsURL);
+            }
+
+            Stream stream = new MemoryStream(excelInfo);
+            ExcelParser.ProcessBLSFile(stream);
+
+            ViewBag.Message = "Success!";
+            
             return View("Index");
         }
     }

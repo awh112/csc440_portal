@@ -11,7 +11,7 @@ namespace CSC440_Project.Modules
 {
     public static class ExcelParser
     {
-        public static void ProcessFile(Stream inputStream)
+        public static void ProcessODCFile(Stream inputStream)
         {
             IExcelDataReader excelReader = ExcelReaderFactory.CreateOpenXmlReader(inputStream);
 
@@ -132,6 +132,24 @@ namespace CSC440_Project.Modules
                     //TODO: send the user to an error page with the correct error details
                 }
             }
+        }
+
+        public static void ProcessBLSFile(Stream stream)
+        {
+            IExcelDataReader excelReader = ExcelReaderFactory.CreateOpenXmlReader(stream);
+
+            DataSet result = excelReader.AsDataSet();
+
+            //before we sync the new data, we want to clear the old data
+            var context = new AppDbContext();
+            var success = context.ClearBDCData();
+
+            if (success)
+            {
+                ParseDataSet(result);
+            }
+
+            excelReader.Close();
         }
     }
 }

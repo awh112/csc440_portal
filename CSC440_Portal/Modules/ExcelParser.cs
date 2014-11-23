@@ -48,7 +48,7 @@ namespace CSC440_Project.Modules
         {
             var context = new AppDbContext();
 
-            for(int i = 4; i < table.Rows.Count; i++)
+            for(int i = 4; i < table.Rows.Count - 1; i++)
             {
                 var row = table.Rows[i];
 
@@ -58,9 +58,26 @@ namespace CSC440_Project.Modules
                 }
 
                 //we should already have the corresponding Occupational Groups to update
-                //TODO: find the group name here, convert & to and for BLS data and take off the 'occupation' part of the title
-                //var existing = context.OccupationalGroups.FirstOrDefault(g => )
+                var odcGroup = FindCorrespondingGroup(row[1].ToString());
+
+                odcGroup.BLSCurrent = Convert.ToDouble(row[2].ToString());
+                odcGroup.BLSFuture = Convert.ToDouble(row[3].ToString());
+                odcGroup.BLSNumChange = Convert.ToDouble(row[4].ToString());
+                odcGroup.BLSPercentChange = Convert.ToDouble(row[5].ToString());
+                odcGroup.BLSMedianWage = Convert.ToDouble(row[6].ToString());
+
+                context.SaveOccupationalGroup(odcGroup);
+                context.SaveChanges();
             }
+        }
+
+        private static OccupationalGroup FindCorrespondingGroup(string oldId)
+        {
+            var context = new AppDbContext();
+            var newId = oldId.Replace("-", "");
+            var group = context.OccupationalGroups.FirstOrDefault(g => g.OccupationalCode == newId);
+
+            return group;
         }
 
         private static void ParseDataSet(DataSet result)

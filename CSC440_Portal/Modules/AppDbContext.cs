@@ -45,6 +45,11 @@ namespace CSC440_Project.Modules
                 dbGroup.Replacements = group.Replacements;
                 dbGroup.Openings = group.Openings;
                 dbGroup.MedianAnnualWage = group.MedianAnnualWage;
+                dbGroup.BLSCurrent = group.BLSCurrent;
+                dbGroup.BLSFuture = group.BLSFuture;
+                dbGroup.BLSNumChange = group.BLSNumChange;
+                dbGroup.BLSPercentChange = group.BLSPercentChange;
+                dbGroup.BLSMedianWage = group.BLSMedianWage;
             }
 
             SaveChanges();

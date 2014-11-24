@@ -25,15 +25,16 @@ else
 }
 <br />
 
-<div id="container"></div>
+<div id="container">
+
+</div>
 
 @*hidden fields for the occupational group data we are using for d3*@
-<input type="hidden" name="CurrentEmployment" value="@Model.CurrentEmploymentNumber" />
-<input type="hidden" name="FutureEmployment" value="@Model.FutureEmploymentNumber" />
+<label id="current" style="display:none;">@Model.CurrentEmploymentNumber</label>
+<label id="future">@Model.FutureEmploymentNumber</label>
 
 @Html.Partial("DetailedOccupations", DOs)
 
-@*<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script>
-
-    </script>*@
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+@*<script src="~/Scripts/js/OccupationalGroup.js"></script>*@

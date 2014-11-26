@@ -25,16 +25,60 @@ else
 }
 <br />
 
-<div id="container">
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    google.load('visualization', '1.0', { 'packages': ['corechart'] });
 
-</div>
+    google.setOnLoadCallback(drawChart);
 
-@*hidden fields for the occupational group data we are using for d3*@
-<label id="current" style="display:none;">@Model.CurrentEmploymentNumber</label>
-<label id="future">@Model.FutureEmploymentNumber</label>
+    function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Date');
+        data.addColumn('number', 'Openings');
+        data.addRows([
+          ['Current', @Model.CurrentEmploymentNumber],
+          ['Future', @Model.FutureEmploymentNumber]
+        ]);
+
+        var options = {
+            'title': 'Employment of Occupation Current vs. Future',
+            'width': 400,
+            'height': 300
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('currentfuture'));
+        chart.draw(data, options);
+    }
+
+    //set up the second graph
+    google.load('visualization', '1.0', { 'packages': ['corechart'] });
+
+    google.setOnLoadCallback(drawChart2);
+
+    function drawChart2() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Date');
+        data.addColumn('number', 'Openings');
+        data.addRows([
+          ['Cincinnati', @Model.CurrentEmploymentNumber],
+          ['National', @Model.BLSCurrent]
+        ]);
+
+        var options = {
+            'title': 'Employment Comparison between Cincinnati and National Prospects',
+            'width': 400,
+            'height': 300
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('cincyvsnational'));
+        chart.draw(data, options);
+    }
+</script>
+
+<div id="currentfuture" style="float: left;"></div>
+<div id="cincyvsnational" style="float: right;"></div>
 
 @Html.Partial("DetailedOccupations", DOs)
 
 <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-@*<script src="~/Scripts/js/OccupationalGroup.js"></script>*@

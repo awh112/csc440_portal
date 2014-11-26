@@ -1,34 +1,31 @@
-﻿var current = $("#current").text();
-var currentNum = Number(current);
+﻿// Load the Visualization API and the piechart package.
+google.load('visualization', '1.0', { 'packages': ['corechart'] });
 
-var dataset = [5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
-                11, 12, 15, 20, 18, 17, 16, 18, 23, 25];
+// Set a callback to run when the Google Visualization API is loaded.
+google.setOnLoadCallback(drawChart);
 
-var w = 500;
-var h = 100;
+// Callback that creates and populates a data table,
+// instantiates the pie chart, passes in the data and
+// draws it.
+function drawChart() {
 
-var svg = d3.select("#container")
-        .append("svg")
-        .attr("width", w)
-        .attr("height", h);
+    // Create the data table.
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'Date');
+    data.addColumn('number', 'Openings');
+    data.addRows([
+      //['Current', @Model.CurrentEmploymentNumber],
+      //['Future', @Model.Future]
+    ]);
 
-//create the rectangles used for the bar chart
-svg.selectAll("rect")
-   .data(dataset)
-   .enter()
-   .append("rect")
-   .attr("x", function (d, i) {
-       return i * 21;
-   })
-   //here we need to subtract from the height because SVG starts
-   //in the top left corner
-   .attr("y", function (d) {
-       return h - (d * 4);
-   })
-   .attr("width", 20)
-   .attr("height", function (d) {
-       return d * 4;
-   })
-   .attr("fill", function (d) {
-       return "rgb(" + (d * 8) + ", 0, 0)";
-   });
+    // Set chart options
+    var options = {
+        'title': 'Employment of Occupation Current vs. Future',
+        'width': 400,
+        'height': 300
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+}

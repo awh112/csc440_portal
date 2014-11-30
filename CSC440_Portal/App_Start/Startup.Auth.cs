@@ -71,7 +71,7 @@ namespace CSC440_Portal
 
         private string[] GetStoredCredentials()
         {
-            string[] text = System.IO.File.ReadAllLines(@"C:\Users\Adam\Source\Repos\csc440_portal\CSC440_Portal\App_Data\auth.txt");
+            string[] text = System.IO.File.ReadAllLines(@"C:\csc440project\App_Data\auth.txt");
 
             return text;
         }

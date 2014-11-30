@@ -47,24 +47,33 @@ namespace CSC440_Portal
             // This is similar to the RememberMe option when you log in.
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
+            var creds = GetStoredCredentials();
+
             // Uncomment the following lines to enable logging in with third party login providers
             //app.UseMicrosoftAccountAuthentication(
             //    clientId: "",
             //    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+            app.UseTwitterAuthentication(
+               consumerKey: creds[2].Split(' ')[0],
+               consumerSecret: creds[3].Split(' ')[0]);
 
             //app.UseFacebookAuthentication(
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = creds[0].Split(' ')[0],
+                ClientSecret = creds[1].Split(' ')[0]
+            });
+        }
+
+        private string[] GetStoredCredentials()
+        {
+            string[] text = System.IO.File.ReadAllLines(@"C:\Users\Adam\Source\Repos\csc440_portal\CSC440_Portal\App_Data\auth.txt");
+
+            return text;
         }
     }
 }

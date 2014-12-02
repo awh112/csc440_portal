@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSC440_Portal", "CSC440_Por
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{DA3EB1EB-C8AB-47B9-95DA-B86BE3D6842C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSC440_Portal.Tests", "CSC440_Portal.Tests\CSC440_Portal.Tests.csproj", "{106C55F5-F546-48E0-A284-9C82031AB338}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DA3EB1EB-C8AB-47B9-95DA-B86BE3D6842C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA3EB1EB-C8AB-47B9-95DA-B86BE3D6842C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA3EB1EB-C8AB-47B9-95DA-B86BE3D6842C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106C55F5-F546-48E0-A284-9C82031AB338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106C55F5-F546-48E0-A284-9C82031AB338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106C55F5-F546-48E0-A284-9C82031AB338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106C55F5-F546-48E0-A284-9C82031AB338}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

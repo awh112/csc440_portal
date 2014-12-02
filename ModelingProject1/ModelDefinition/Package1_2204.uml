@@ -1510,6 +1510,336 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="1ccd254a-ba0d-43c3-9323-7566c37fe6df"
+            isDerived="false"
+            sourceEndRoleName="OccupationalGroup"
+            targetEndRoleName="BLSCurrent"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+              LastKnownName="Nullable&lt;Double‎&gt;"
+              LastKnownLocation="Package2_2204.uml" />
+            <description>Property BLSCurrent references type Nullable&lt;Double‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="da09a030-8e0c-4d5f-ab7d-823f94b7b62f"
+                  name="OccupationalGroup"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e03790d2-6989-47bb-8e3f-de9cd1f82da1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="198ddb6c-3162-43db-956d-a12e6e26ba64"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7b63ba8a-1cda-4b4a-8d2e-2dfa82360409"
+                  name="BLSCurrent"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2fbfce48-9828-4676-9f61-5f8c6ed6d66e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="172acb4d-ca27-4316-a2ab-43a61ebd6360"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0eb8cff0-6803-4504-9ecf-03fca5f8c58c"
+            isDerived="false"
+            sourceEndRoleName="OccupationalGroup"
+            targetEndRoleName="BLSFuture"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+              LastKnownName="Nullable&lt;Double‎&gt;"
+              LastKnownLocation="Package2_2204.uml" />
+            <description>Property BLSFuture references type Nullable&lt;Double‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06549329-cea4-4344-ae88-a401b47c86dc"
+                  name="OccupationalGroup"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3cc65dfd-1077-4b87-8e70-6f64c7851779"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a7040b55-6281-4cd7-843e-630bff6fa4e3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="712edf27-1a7e-4242-abd9-6904f29313f5"
+                  name="BLSFuture"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bcdd666a-94ac-4ac8-b0c4-d1fbd6a58a58"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ca00907d-b42e-43bf-a37d-1730ae1bb944"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3d183c7b-2d96-4d03-b53c-7b35872beda1"
+            isDerived="false"
+            sourceEndRoleName="OccupationalGroup"
+            targetEndRoleName="BLSNumChange"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+              LastKnownName="Nullable&lt;Double‎&gt;"
+              LastKnownLocation="Package2_2204.uml" />
+            <description>Property BLSNumChange references type Nullable&lt;Double‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8536114-30f0-4045-ae97-35b11efc68f6"
+                  name="OccupationalGroup"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="00a78cff-4b83-498c-ae9f-15c89229d113"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="214caedb-f9f9-4016-92c4-01bc594c3a0b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="49361f2b-3a32-476b-9c45-3edfd7340348"
+                  name="BLSNumChange"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aa95fec0-9805-4f16-a22f-eda3d3733895"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="69655b86-7278-4cc2-b6be-ec2e07945ec8"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ff172a78-b832-463d-970d-e79dbe8f3a28"
+            isDerived="false"
+            sourceEndRoleName="OccupationalGroup"
+            targetEndRoleName="BLSPercentChange"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+              LastKnownName="Nullable&lt;Double‎&gt;"
+              LastKnownLocation="Package2_2204.uml" />
+            <description>Property BLSPercentChange references type Nullable&lt;Double‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c647a23-ea69-49ee-9848-38b93ab82389"
+                  name="OccupationalGroup"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d3941ce5-3840-42b1-9e4a-e5f2c8b559a6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5317a356-1fa2-4d55-972c-9ffc9fcd3185"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6bd1f0e3-5bd5-448a-80d7-6b962035bf2b"
+                  name="BLSPercentChange"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e104b6c4-ebd3-477e-9c08-11e6ee2514ba"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="380144ce-afb1-46f7-8cca-230ec780ad62"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="893a27b6-a836-4114-bc8f-8d9bf73f18f4"
+            isDerived="false"
+            sourceEndRoleName="OccupationalGroup"
+            targetEndRoleName="BLSMedianWage"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+              LastKnownName="Nullable&lt;Double‎&gt;"
+              LastKnownLocation="Package2_2204.uml" />
+            <description>Property BLSMedianWage references type Nullable&lt;Double‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8844c584-4af3-48a1-9436-22713eed65f7"
+                  name="OccupationalGroup"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2a85e3ab-6f8e-4bc4-a8aa-ec35bcac416b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="284841ac-c8c6-4bb0-89cf-6a2172ff6991"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f44d3218-1949-4945-98fa-e6bd22c4b0e6"
+                  name="BLSMedianWage"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c008884c-2a3f-4df5-8b68-79a1548a7e1b"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2f52d5ec-6489-4d33-8195-b985fa0ac92a"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedAttributesInternal>
           <property
@@ -2312,10 +2642,410 @@
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="7b71d99c-f6d2-45dc-9fb0-3759912e3bf8"
+            name="BLSCurrent"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4e9bdcc7-51ba-4a79-b367-29952fd20dc9"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FAdam%2FSource%2FRepos%2Fcsc440_portal%2FCSC440_Portal%2Fbin%2FCSC440_Portal.dll Namespace%3DCSC440_Project.Models Type%3DOccupationalGroup Member%3DBLSCurrent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b77b3450-a985-4486-8802-6e34ca736003"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="654cd4a7-9015-4b26-a034-c5b217f6864a">
+                    <propertyInstance
+                      Id="6afb21e6-fa25-4103-b73c-5c908e8877c8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10a601a8-ba47-4cb4-924c-143f2abc0dee">
+                    <propertyInstance
+                      Id="9a9e3191-265d-4cff-8318-8703a5ba095a"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1fde9614-ad8d-461c-908b-6833e999e3d0">
+                    <propertyInstance
+                      Id="5c9e33e4-86ef-4ab2-94e5-c054a9ab932b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5d64e4b-802f-42c2-b3eb-1e93c52ef04a">
+                    <propertyInstance
+                      Id="ebc1d064-33ac-4c7e-b765-62d682a3cdb0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d8c7ea4-3b39-46ae-9613-ec41fcca14de">
+                    <propertyInstance
+                      Id="bf6f09e1-3075-44eb-a8f6-ff7ec2f395c4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93883b3c-013d-476c-b878-1ded216ea536">
+                    <propertyInstance
+                      Id="6dc78982-a4a2-4f63-ab80-017e8121e562"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7450fe09-02d5-463d-bf26-2eccec0f3c0f">
+                    <propertyInstance
+                      Id="902f32e3-7189-48e0-a0f2-8e39d2a6dd05"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+                LastKnownName="Nullable&lt;Double‎&gt;"
+                LastKnownLocation="Package2_2204.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5e837165-36f6-4aa8-a3bd-4ff650a28949"
+            name="BLSFuture"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="2e794648-08a0-4c0a-8635-56d12fcfcc21"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FAdam%2FSource%2FRepos%2Fcsc440_portal%2FCSC440_Portal%2Fbin%2FCSC440_Portal.dll Namespace%3DCSC440_Project.Models Type%3DOccupationalGroup Member%3DBLSFuture"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e91863e5-28a9-4ecf-8bff-761774eafa79"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a20dc94-8e46-4073-b490-27f9f242a4a9">
+                    <propertyInstance
+                      Id="fb56fa24-86ba-4863-a6cb-6289a1af4706"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88950ee0-25df-4da1-ab8e-2f3fee4fe573">
+                    <propertyInstance
+                      Id="435c9624-dde7-4fbc-8fef-3724d70b37a7"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a21b26b1-fd5d-4621-97cf-799744af5270">
+                    <propertyInstance
+                      Id="f688ec86-f458-4b13-b3ea-26d9fd921eb6"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5918abf5-e411-4f85-a02f-9be4160284cd">
+                    <propertyInstance
+                      Id="fe395d2f-b9c8-4cd6-9f4c-292b6ff8b412"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4bd7bada-ab57-4986-b9a1-ff62b4e206cb">
+                    <propertyInstance
+                      Id="fdd7e15f-7043-43e2-8bc8-eebaa3287577"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="089e5267-27e7-4fe5-859f-50b0c2d7b112">
+                    <propertyInstance
+                      Id="3480d03e-dac9-4e36-9973-67e52e56c69f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69226874-5a43-4144-8b08-e49d7fb43875">
+                    <propertyInstance
+                      Id="78e40ca2-681f-4e6e-9ae2-6c8a50c69478"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+                LastKnownName="Nullable&lt;Double‎&gt;"
+                LastKnownLocation="Package2_2204.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="08ca6629-4e4e-4e85-90b3-90eb4653f7c2"
+            name="BLSNumChange"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="00070b75-52da-47f8-bff4-f46ab04a8496"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FAdam%2FSource%2FRepos%2Fcsc440_portal%2FCSC440_Portal%2Fbin%2FCSC440_Portal.dll Namespace%3DCSC440_Project.Models Type%3DOccupationalGroup Member%3DBLSNumChange"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6d7ea463-24ae-49c3-9091-3d220a75e0ec"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16d30236-cf8b-4489-9611-e36086508f17">
+                    <propertyInstance
+                      Id="ce794c66-cc22-4bd3-9eb2-2322d830c144"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="391a6c9d-8a7a-491e-8218-8cb20428c28d">
+                    <propertyInstance
+                      Id="071ec5eb-0b0a-4e8e-89fd-826667345a3c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8df545ad-88fd-4d32-aba2-90387ad7b2b2">
+                    <propertyInstance
+                      Id="370b70b8-dbab-4f4f-ab13-0e1683467de0"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e60dbb0-4274-404f-b29a-eeb1d78212ec">
+                    <propertyInstance
+                      Id="1ab9b3b5-e369-462f-957c-6968135b3e98"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76066dac-2e8a-48f5-bd68-5cc655ebb807">
+                    <propertyInstance
+                      Id="cd3ded28-64a4-4b8f-a350-c832f8922b5e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb8f1675-5223-4a46-a562-3deef7b67614">
+                    <propertyInstance
+                      Id="c1996016-36be-45b2-b2ba-bdea8f832020"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ee8d051-813d-49dc-b1b9-cefee70e9625">
+                    <propertyInstance
+                      Id="f7f53b34-603c-446c-b84a-c5afe4b74d20"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+                LastKnownName="Nullable&lt;Double‎&gt;"
+                LastKnownLocation="Package2_2204.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ae94928a-269d-4d0d-b80a-6a819c18dfc4"
+            name="BLSPercentChange"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7e9813e6-ff1b-4ccd-beed-e29f09ba08af"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FAdam%2FSource%2FRepos%2Fcsc440_portal%2FCSC440_Portal%2Fbin%2FCSC440_Portal.dll Namespace%3DCSC440_Project.Models Type%3DOccupationalGroup Member%3DBLSPercentChange"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="95b77e8b-8324-45e1-81ad-ef5c70acc809"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c9da38c-d0b5-499f-926a-4468860e7671">
+                    <propertyInstance
+                      Id="9964b47d-8d1f-417c-b48c-17b799b46b96"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fab3796-24ca-4523-9afc-925a500f7745">
+                    <propertyInstance
+                      Id="7fe9c801-1f01-46de-85c2-28d9387336c1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35984ff4-bb54-4fe0-8d07-829cafd60979">
+                    <propertyInstance
+                      Id="cff08594-5bd9-4c27-89b3-e7edfa1444de"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7247b84b-23d2-44c6-8760-bf2fa81f0740">
+                    <propertyInstance
+                      Id="0f60dcf9-d8aa-47ff-ad07-50c1b023b93e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="603bc6f8-f686-4f6e-915b-9d4001df8dc7">
+                    <propertyInstance
+                      Id="5ce161b4-8268-4856-a1b7-8042777f30a3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cbe9fc1-ce74-4564-b72a-37274a1d18b7">
+                    <propertyInstance
+                      Id="b36f122a-637e-498b-9cca-d01fc93a7e09"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3c839a3-570a-471b-8dc2-510ecfb674e7">
+                    <propertyInstance
+                      Id="658a0d21-c9c9-4eff-8288-6d20590a13b1"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+                LastKnownName="Nullable&lt;Double‎&gt;"
+                LastKnownLocation="Package2_2204.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6fe90238-279b-4cf1-bf95-13f518da9f12"
+            name="BLSMedianWage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="56cde2fd-95b2-4aa2-bb7b-2a12390b4133"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FAdam%2FSource%2FRepos%2Fcsc440_portal%2FCSC440_Portal%2Fbin%2FCSC440_Portal.dll Namespace%3DCSC440_Project.Models Type%3DOccupationalGroup Member%3DBLSMedianWage"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="47d30653-215b-4e28-a354-191cd1a7259c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="543b86d3-a17a-47f5-b078-6058eb63250f">
+                    <propertyInstance
+                      Id="41fe3441-a513-451f-a96b-1353a5c5f6e3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e38cbc8-eae1-44a9-a424-8ac67cad5a26">
+                    <propertyInstance
+                      Id="e03c937c-c575-4439-82ca-6115cd11ba95"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e10dfa4f-cee0-4b48-9eaa-afc82265e834">
+                    <propertyInstance
+                      Id="b2321d99-162c-4914-9c83-f599030dc04b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a956018-cafb-4d45-bc22-041ae3b7fb15">
+                    <propertyInstance
+                      Id="cb165b1e-8566-4c08-8920-9d972d32f9ba"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd5a10a6-2f63-4e1a-a6ed-61a6feb27570">
+                    <propertyInstance
+                      Id="cd68ce33-a25c-477c-9c0a-2a36661a96b9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44ea638c-50b6-4a6d-80a9-540a9b14dd24">
+                    <propertyInstance
+                      Id="3743faaf-c00f-4d0d-b0f2-ce31bac8ccc1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="534b6e35-a848-47c1-87d8-ba7f96c97a2d">
+                    <propertyInstance
+                      Id="721810bc-9ecb-46ed-b711-e5bd96675565"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="41a644fe-1b5e-423e-b56d-d0187196e855"
+                LastKnownName="Nullable&lt;Double‎&gt;"
+                LastKnownLocation="Package2_2204.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
-            Id="2528cf62-735f-4aa2-8c15-c2cf0ad093e6"
+            Id="c36ae721-42eb-4b95-a19d-25c51b93d8a9"
             name="OccupationalGroup"
             isLeaf="false"
             isStatic="false"
@@ -2324,54 +3054,54 @@
             isQuery="false">
             <referencesInternal>
               <reference
-                Id="d44d729e-e0f5-454f-bdda-05c7f826c228"
+                Id="6d36f4ef-2b60-4fb2-bea0-94eb47680a85"
                 handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FAdam%2FSource%2FRepos%2Fcsc440_portal%2FCSC440_Portal%2Fbin%2FCSC440_Portal.dll Namespace%3DCSC440_Project.Models Type%3DOccupationalGroup Member%3D.ctor"
                 tag="ViewCode" />
             </referencesInternal>
             <appliedStereotypesInternal>
               <stereotypeInstance
-                Id="e1073325-5187-40b1-bd4b-342d0e5ba054"
+                Id="df2d2a9a-cdd7-4f6c-abe1-b24b67a41a51"
                 name="method"
                 profile="CSharpProfile">
                 <propertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="aecc5967-ec22-4098-ae6b-36fd6f102ef8">
+                    Id="b290cddb-3cff-49eb-85c4-4dc585c33a29">
                     <propertyInstance
-                      Id="48889e83-91e3-4f59-a8c9-0d3794d7cc08"
+                      Id="cf8628bd-56f1-4fe1-9a41-7be056495066"
                       name="ClrAttributes" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="3bd6137d-ed6f-464d-8db4-ef2ed9e6f9f5">
+                    Id="389f6672-0724-4a6b-bfdd-d3cb38aafc96">
                     <propertyInstance
-                      Id="60984b74-1ca6-4bca-b55d-3b149c1e8915"
+                      Id="ea5af03c-611a-4012-8113-265b230b54ac"
                       name="IsPartial"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="f43630e6-89e0-49a4-92d4-7fbeb305a1e3">
+                    Id="763c4e71-2a04-4ca6-84ec-26cc8c6352f5">
                     <propertyInstance
-                      Id="c09c4f52-c96e-4332-be18-dff79be92821"
+                      Id="18967b7a-4bcc-4f34-87e0-71b42590402e"
                       name="IsUnsafe"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="e8b7496a-f35e-4969-ae0f-74809bd8e5db">
+                    Id="2bff25ab-4ea0-4134-ab14-96a0682e372d">
                     <propertyInstance
-                      Id="f3e43384-a4e7-4bd1-8941-5737149c4f9c"
+                      Id="0b0a9252-df9b-4945-8169-47fb912b39f3"
                       name="Inheritance"
                       value="none" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="121ec06e-59cf-4bc9-8013-8ea9481ca886">
+                    Id="b5c588fb-61b6-4515-9a10-4f9516a84871">
                     <propertyInstance
-                      Id="4edac3cf-16a1-46a1-879b-5a67767d7b93"
+                      Id="4031eada-5a8d-44be-b5c2-9e519a07e735"
                       name="PackageVisibility"
                       value="internal" />
                   </stereotypeInstanceHasPropertyInstances>
                   <stereotypeInstanceHasPropertyInstances
-                    Id="c65db7d1-5fba-4209-b2c9-bf75aa8218e7">
+                    Id="64e152dd-cef0-47b3-8fdc-c3f1d7aed017">
                     <propertyInstance
-                      Id="b45d8100-14d9-4122-a348-d90ddf5cbe77"
+                      Id="00d69a52-60c4-4a47-820b-81cd95cf8b45"
                       name="params"
                       value="false" />
                   </stereotypeInstanceHasPropertyInstances>
